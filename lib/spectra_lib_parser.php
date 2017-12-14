@@ -249,7 +249,7 @@
 		$parsed_block = spectra_block_new ();
                 
                 // Not having a Block hash is a bad thing.
-                if(empty($block["hash"])){throw new Exception("Invalid Block Format: Hash is Missing", $code);
+                if(empty($block["hash"])){throw new Exception("Invalid Block Format: Hash is Missing", $code);}
 
 	//	Insert values for this block into the parsed block array
 		if (isset ($block["hash"]) && $block["hash"] != "")
