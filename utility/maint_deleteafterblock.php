@@ -12,7 +12,7 @@
     $delete_height_start = (int) $argv[1];
 
     // Get the current block height from the explorer
-    $height_exp = spectra_block_height ();        
+    $height_exp = (int) spectra_block_height ();        
 
     // Delete all blocks from $delete_height_start up to $height_exp
     for($block_hieght = $height_exp; $block_hieght >= $delete_height_start; $block_hieght--){
