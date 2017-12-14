@@ -754,7 +754,7 @@
 			echo "		</div> \n\n";
 		}
 		
-		if (isset ($network_info["difficulty"]) && $network_info["difficulty"] != "")
+		if (isset ($network_info["difficulty"]) && $network_info["difficulty"] != "" && !is_array($network_info['difficulty']))
 		{
 			echo "		<div class=\"network_detail\">\n";
 			echo "			<div class=\"network_detail_label\"> \n";
