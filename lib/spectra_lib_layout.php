@@ -331,7 +331,7 @@
 			echo "		</div> \n\n";
 		}
 		
-		if (isset ($network_info["difficulty"]) && $network_info["difficulty"] != "")
+		if (isset ($network_info["difficulty"]) && $network_info["difficulty"] != "" && !is_array($network_info['difficulty']))
 		{
 			echo "		<div class=\"front_stat_item\"> \n";
 			echo "			<div class=\"front_stat_label\"> \n";
@@ -1808,7 +1808,7 @@
 	}
 	
 /******************************************************************************
-	Developed By Jake Paysnoe - Copyright © 2015 SPEC Development Team
+	Developed By Jake Paysnoe - Copyright ï¿½ 2015 SPEC Development Team
 	SPEC Block Explorer is released under the MIT Software License.
 	For additional details please read license.txt in this package.
 ******************************************************************************/
