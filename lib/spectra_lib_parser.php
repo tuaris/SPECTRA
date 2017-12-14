@@ -247,6 +247,9 @@
 	{
 	//	Prepare a parsed block array for values		
 		$parsed_block = spectra_block_new ();
+                
+                // Not having a Block hash is a bad thing.
+                if(empty($block["hash"])){throw new Exception("Invalid Block Format: Hash is Missing", $code);
 
 	//	Insert values for this block into the parsed block array
 		if (isset ($block["hash"]) && $block["hash"] != "")
@@ -621,7 +624,7 @@
 	}
 	
 /******************************************************************************
-	Developed By Jake Paysnoe - Copyright © 2015 SPEC Development Team
+	Developed By Jake Paysnoe - Copyright ï¿½ 2015 SPEC Development Team
 	SPEC Block Explorer is released under the MIT Software License.
 	For additional details please read license.txt in this package.
 ******************************************************************************/
