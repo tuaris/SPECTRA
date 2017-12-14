@@ -22,7 +22,7 @@ function tx_raw_pop (strTX)
 	document.getElementById('raw_tx_click').innerHTML='Click Here To Hide Raw Transaction Data';
 
 	document.getElementById('raw_tx_display').style.display='block';
-	panel_fetch ('raw_tx_display', 'spectra/tx.php?raw=1&tx=' + strTX);
+	panel_fetch ('raw_tx_display', 'tx.php?raw=1&tx=' + strTX);
 }
 
 function tx_raw_dump (strTX)
