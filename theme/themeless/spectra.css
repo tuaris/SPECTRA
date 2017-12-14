@@ -1348,7 +1348,7 @@ br {
 
 	float:left;
 	clear:none;
-	overflow_auto;
+	overflow: auto;
 	}
 	
 .ticker_panel_head {
@@ -1384,7 +1384,7 @@ br {
 	clear:none;
 	}
 	
-,ticker_panel_value {
+.ticker_panel_value {
 	width:150px;
 	margin:0px;
 	
@@ -1768,7 +1768,7 @@ br {
 	border-top-style:solid;
 	border-bottom-style:solid;
 	
-	font-family;serif;
+	font-family: serif;
 	text-align:left;
 	word-wrap:break-word;
 	
