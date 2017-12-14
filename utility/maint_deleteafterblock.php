@@ -4,8 +4,8 @@
 
     // check for a block number in the command line
     if (!isset ($argv[1]) or $argv[1] == ""){
-            echo "You must provide a block height.\n\n";
-            exit;
+        echo "You must provide a block height.\n\n";
+        exit;
     }
 
     // Block hieght to start deleting from
@@ -15,7 +15,7 @@
     $height_exp = spectra_block_height ();        
 
     // Delete all blocks from $delete_height_start up to $height_exp
-    for($block_hieght = $height_exp; $block_hieght <= $delete_height_start; $block_hieght++){
+    for($block_hieght = $height_exp; $block_hieght >= $delete_height_start; $block_hieght--){
         // Retrieve the specified block hash
         $hash = getblockhash ($block_hieght);            
 
